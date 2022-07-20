@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: url(bg.png);
+
+}
+
+/*----------------Header-----------*/
+
+header .container{
+    max-width: 1920px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .container .logo{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    
+}
+
+header .container .logo ion-icon{
+    color: coral;
+}
+
+
+header.container .icons{
+    color: #000000;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+header .container .icons ion-icon{
+    color: coral;
+    cursor: pointer;
+}
+
+/*----------------Main-----------*/
+
+main .container{
+    max-width: 1920px;
+    width: 100%;
+    height:  calc(100vh - 60px);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main  .container .menu_lateral {
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+main  .container .menu_lateral ul li {
+    list-style: none;
+    padding: 30px 0;
+}
+
+main  .container .menu_lateral ul li a{
+    text-decoration: none;
+    color:coral;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+main  .container .menu_lateral ul li a:hover{
+    color:coral;
+    font-size: 2rem;
+    text-decoration: underline black;
+}
+
+main .container .menu_lateral .active {
+    color: coral;
+    font-size: 2rem;
+    text-decoration: underline black;
+}
+
+
+
+main .container .chamada{
+    width: 10%;
+    height: 1vh;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 100px;
+}
+
+main .container .chamada h1{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+main .container .chamada .button button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: coral;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+  
+    
+
+
+main .container .image{
+    width: 50%;
+    min-height: 70vh;
+    margin-top: 20px;
+        
+}
+
+main .container .image image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+main .text-chamada{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+main .text-chamada .box_left,
+main .text-chamada .box_right{
+    width: 500px;
+    padding: 0 1%;
+}
+
+main .text-chamada .box_left h3,
+main .text-chamada .box_right h3{
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+main .text-chamada .box_left p,
+main .text-chamada .box_right p{
+    font-weight: 200;
+    font-style: italic;
+}
+
+/*----------------Responsivo-----------*/
+
+@media screen and (max-width: 1014px){
+    main .container{
+        justify-content: space-between;
+    }
+
+    main .container .menu_lateral ul li a{
+        font-size: 1rem;
+    }
+    main .container .chamada{
+        width: 40%;
+        height: 30vh;
+        text-align: center;
+    }
+    main .container .chamada h1{
+        font-size: 3rem;
+    }
+
+    main .container .chamada h2{
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    main .container .chamada .button button{
+        font-size: 1rem;
+    }
+
+    main .container .image{
+        position: relative;
+    }
+
+    main .container .image img{
+        width: 100%;
+        height: 60%;
+    }
+    
+    main .text-chamada .box_left,
+    main .text-chamada .box_right{
+        width: 500px;
+        padding: 0 2%;
+    }
+
+    main .text-chamada .box_left h3,
+    main .text-chamada .box_right h3{
+        font-size: 16px;
+    }
+
+    main .text-chamada .box_left p,
+    main .text-chamada .box_right p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 685px){
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .menu_lateral{
+        margin-top: 20px;
+    }
+
+    main .container .menu_lateral ul{
+        display: flex;
+        align-items: center;
+    }
+
+    main .container .menu_lateral ul li{
+        padding: 0 20px;
+    }
+
+    main .container .chamada{
+        margin-top: 20px;
+    }
+
+    main .container .image{
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    main .text-chamada{
+        text-align: center;
+        bottom: -50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        
+    }
+
+    main .text-chamada .box_left ,
+    main .text-chamada .box_right{
+        width: 350px;
+    }
+}
+
+
+
